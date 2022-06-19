@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(/palindrome.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.container{
+    width: 95%;
+    height: 50vh;
+    margin: auto;
+    border-radius: 15px;
+    background: white;
+    padding: 0px 5px;
+}
+.header{
+    padding: 10px 0px;
+}
+.header h1{
+    text-align: center;
+    font-size: 40px;
+}
+.header p{
+    font-size: 18px;
+    padding: 10px 5px;
+    color: #333;
+    letter-spacing: 1px;
+    font-style: italic;
+
+}
+
+
+.display{
+height: 60px;
+background: rgb(228, 223, 223);
+border-radius: 5px;
+text-align: center;
+border: 1px solid none;
+color: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 0.5px solid none;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background: blue;
+    border: 1px solid blue;
+    color: white;
+    transition: 0.5s all;
+}
+button:active{
+    background: green;
+}

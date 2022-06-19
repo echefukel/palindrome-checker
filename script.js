@@ -1,27 +1,26 @@
-// const palindrome = (str)=>{
-//    const reverse =  str.toUpperCase();
-//    const answer =  reverse.split('').reverse().join();
-//    const check = str.toUpperCase().split('').join();
-// return answer === check;
+const button = document.querySelector('button');
+const display = document.getElementById('display');
+const input = document.querySelector('input');
+const value = input.value;
+
+
+const CheckPalindrome = () => {
+          const value = input.value.toLowerCase();
     
-// }
-// console.log(palindrome('uche'));
-
-// let answer = 'uche'.toLowerCase().match('uc')
-
-// let drop = [1,2,3,4,5].join('');
-// console.log(typeof(drop));
-
-
-
-
-
-
-
-const notice = (str) =>{
-let result = str.toString().toUpperCase().match(/[0-9A-z]/gi);
-console.log(result);
+    let str = input.value.toLowerCase().match(/[a-z0-9]/gi).reverse().join('');
+    //  lets populate our UI below
+    if(value === str){
+        // display success in the div element
+        display.textContent = 'Yes,This is a palindrome';
+        display.style.color = 'green'
+    } else{
+        display.textContent = 'No,This is not a Palindrome';
+        display.style.color = 'red';
+    } 
+    
 }
 
 
-notice(100000001)
+
+// add event listener
+button.addEventListener('click',CheckPalindrome);
