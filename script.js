@@ -6,6 +6,7 @@ const value = input.value;
 
 const CheckPalindrome = () => {
           const value = input.value.toLowerCase();
+          console.log(value);
     
     let str = input.value.toLowerCase().match(/[a-z0-9]/gi).reverse().join('');
     //  lets populate our UI below
